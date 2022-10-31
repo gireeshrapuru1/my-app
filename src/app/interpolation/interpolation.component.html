@@ -1,0 +1,85 @@
+<h1>my name is {{name}}</h1>
+<h1>my age is {{age}}</h1>
+<h1>nationality indian {{indian}}</h1>
+
+<h1 *ngFor="let age of ages">{{age}}</h1>
+
+<ol>
+    <li *ngFor="let name of names">{{name}}</li>
+</ol>
+
+<h2 *ngFor="let product of products">{{product.name}} {{product.price}}</h2>
+
+<table border="2">
+    <thead>
+            <tr>
+                <th>NAME</th>
+                <th>PRICE</th>
+            </tr>
+    </thead>
+    <tbody>
+              <tr *ngFor="let product of products">
+                  <td>{{product.name}}</td>
+                  <td>{{product.price}}</td>
+              </tr>
+    </tbody>
+</table>
+
+
+<table border="2">
+              <thead>
+                      <tr>
+                        <th>qualification</th>
+                        <th>school</th>
+                        <th>year</th>
+                      </tr>
+              </thead>
+              <tbody align="center">
+                        <tr *ngFor='let student of students'>
+                       
+                             <td>{{student.qualification}}</td>
+                             <td>{{student.school}}</td>
+                             <td>{{student.year}}</td>
+
+
+                        </tr>
+
+              </tbody>
+</table>
+
+
+
+
+<table border="2">
+    <thead>
+            <tr>
+              <th>Vehicle</th>
+              <th>Manufacturer</th>
+              <th>Model</th>
+              <th>Type</th>
+              <th>Fuel</th>
+              <th>Color</th>
+              <th>Image</th>
+              <th>Id</th>
+            </tr>
+    </thead>
+    <tbody align="center">
+              <tr *ngFor='let v of vehicles'>
+             
+                   <td>{{v.Vehicle}}</td>
+                   <td>{{v.manufacturer}}</td>
+                   <td>{{v.model}}</td>
+                   <td>{{v.type}}</td>
+                   <td>{{v.fuel}}</td>
+                   <td>{{v.color}}</td>
+                   <td>
+                        <img src="{{v.image}}" width="100px" height="100px">
+                   </td>
+                   <td>{{v.id}}</td>
+                
+
+
+              </tr>
+
+    </tbody>
+</table>

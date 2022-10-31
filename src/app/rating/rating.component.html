@@ -1,0 +1,14 @@
+
+<select [(ngModel)]="rate">
+      <option>5</option>
+      <option>4</option>
+      <option>3</option>
+      <option>2</option>
+      <option>1</option>
+
+</select>
+<img *ngIf="rate ==1" src="assets/1star.jfif" alt="one star image" >
+<img *ngIf="rate ==2" src="assets/2star.jfif" alt="two star image" >
+<img *ngIf="rate ==3" src="assets/3star.jfif" alt="three star image" >
+<img *ngIf="rate ==4" src="assets/4star.jfif" alt="four star image" >
+<img *ngIf="rate ==5" src="assets/5star.jfif" alt="five star image" >

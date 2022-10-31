@@ -1,0 +1,35 @@
+<h1>CART</h1>
+<label >name:</label>
+<input type="text" [(ngModel)]="name">
+<br>
+<label >price:</label>
+<input type="number" [(ngModel)]="price">
+<br>
+<label>quantity:</label>
+<input type="number" [(ngModel)]="quantity">
+<br>
+<button (click)="c()" class="btn btn-primary">add to cart</button>
+
+<table class="table">
+    <thead>
+             <tr>
+                <th>S.No</th>
+                <th>name</th>
+                <th>price</th>
+                <th>quantity</th>
+
+             </tr>
+    </thead>
+    <tbody>
+           <tr *ngFor="let li of lists; let i=index">
+                <td>{{i+1}}</td>
+                <td>{{li.name}}</td>
+                <td>{{li.price |price}}</td>
+                <td>{{li.quantity}}</td>
+                <td><button (click)="delete(i)" class="btn btn-danger">delete</button></td>
+
+
+           </tr>
+
+    </tbody>
+</table>

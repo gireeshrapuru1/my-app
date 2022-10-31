@@ -1,0 +1,23 @@
+
+<table class="table table-dark">
+    <thead>
+
+    </thead>
+    <tbody>
+             <tr *ngFor="let vehicle of vehicles">
+                      <th>{{vehicle.Vehicle}}</th>
+                      <th>{{vehicle.manufacturer}}</th>
+                      <th>{{vehicle.model}}</th>
+                      <th>{{vehicle.type}}</th>
+                      <th>{{vehicle.fuel}}</th>
+                      <th>{{vehicle.color}</th>
+                      <th>
+                         <img src="{{vehicle.image}}">
+                     </th>
+                      <th>{{vehicle.id}}</th>
+
+
+             </tr> 
+    </tbody>
+</table>
+
